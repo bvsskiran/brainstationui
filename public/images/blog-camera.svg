@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="640" viewBox="0 0 1024 640" role="img" aria-label="Camera placeholder">
+	<rect width="1024" height="640" fill="#111827"/>
+	<rect x="312" y="220" width="400" height="220" rx="16" ry="16" fill="#1f2937" stroke="#f59e0b" stroke-width="6"/>
+	<circle cx="512" cy="330" r="70" fill="#111827" stroke="#f59e0b" stroke-width="8"/>
+	<text x="50%" y="120" text-anchor="middle" fill="#f9fafb" font-family="sans-serif" font-size="48">Camera</text>
+</svg> 
