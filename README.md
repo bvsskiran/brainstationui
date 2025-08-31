@@ -1,3 +1,5 @@
+# brainstationui
+brain station ui
 # Brain Station
 
 **Brain Station** web app build on a free and open-source template to make the website using **[NextJS](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account best practices.
@@ -9,5 +11,8 @@
 - ✅ **Image optimization** and **Font optimization**.
 - ✅ Fast and **SEO friendly blog**.
 - ✅ Generation of **project sitemap** and **robots.txt** based on your routes.
+
+
+
 
 
