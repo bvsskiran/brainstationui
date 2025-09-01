@@ -32,14 +32,19 @@ export const metadata: Metadata = {
   title: SITE.title,
 };
 
-export default function Page() {
+import LatestBlogsCarousel from '~/components/widgets/LatestBlogsCarousel';
+import { findLatestPosts } from '~/utils/posts';
+
+export default async function Page() {
+  const posts = await findLatestPosts({ count: 6 });
   return (
     <>
       <Hero {...heroHome} />
-      <Features {...featuresHome} />
-      <FAQs2 {...faqs2Home} />
-      <Team {...teamHome} />
-      <Contact {...contactHome} />
+      {/* <Features {...featuresHome} /> */}
+    <LatestBlogsCarousel posts={posts} headingClass="text-blue-600" />
+      {/* <FAQs2 {...faqs2Home} />
+      <Team {...teamHome} /> */}
+      {/* <Contact {...contactHome} /> */}
     </>
   );
 }

@@ -14,8 +14,8 @@ import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 export const announcementData: AnnouncementProps = {
   title: 'NEW',
   callToAction: {
-    text: 'This template is sample for BrainStation »',
-    href: 'http://localhost:3000',
+    text: 'BrainStation India Foundation (BSIF) is a non-profit organization »',
+    href: 'https://brainstationui-e2a9bve9e8fqh5aq.centralindia-01.azurewebsites.net/',
   },
   callToAction2: {
     text: 'Follow @BrainStation on X',
@@ -31,50 +31,40 @@ export const headerData: HeaderProps = {
       href: '/about',
     },
     {
-      label: 'Wings to Fly',
-      href: '/wingstofly',
-    },
-    {
-      label: 'Power to Dream',
-      href: '/powertodream',
-    },
-    {
-      label: 'Finance First',
-      href: '/financefirst',
-    },
-    {
-      label: 'Get Involved',
-      href: '/getinvolved',
-    },
-    {
-      label: 'Pages',
+      label: 'Services/What We Do',
       icon: IconChevronDown,
       links: [
-        
         {
-          label: 'Contact',
-          href: '/contact',
+          label: 'Wings to Fly',
+          href: '/wingstofly',
         },
         {
-          label: 'Cookie Policy',
-          href: '/cookiepolicy',
+          label: 'Power to Dream',
+          href: '/powertodream',
         },
         {
-          label: 'FAQs',
-          href: '/faqs',
+          label: 'Finance First',
+          href: '/financefirst',
         },
       ],
     },
+    {
+      label: 'Resources/Publications',
+      href: '/',
+    },
+    {
+          label: 'Contact Us',
+          href: '/contact',
+    },
+ ],
+  actions: [
+    {
+      text: 'Get Involved',
+      href: '/getinvolved',
+    },
   ],
-  // actions: [
-  //   {
-  //     text: 'Download',
-  //     href: 'https://github.com/onwidget/BrainStation',
-  //     targetBlank: true,
-  //   },
-  // ],
   isSticky: true,
-  showToggleTheme: true,
+  showToggleTheme: false,
   showRssFeed: false,
   position: 'right',
 };
@@ -227,7 +217,7 @@ export const footerData: FooterProps = {
 export const footerData2: FooterProps = {
   links: [
     {
-      label: 'Terms of use',
+      label: 'Terms of Use',
       href: '/terms',
     },
     {
@@ -245,51 +235,57 @@ export const footerData2: FooterProps = {
   ],
   columns: [
     {
-      title: 'Address',
-      texts: ['Brainstation India Foundation, 303 Gokul Arcade, A Wing, Sahar Road, Vile Parle East, Mumbai – 400057, Maharashtra, India'],
+      title: 'Contact Us',
+      texts: [
+        'BrainStation India Foundation',
+        '303 Gokul Arcade, A Wing, Sahar Road',
+        'Vile Parle East, Mumbai – 400057',
+        'Maharashtra, India'
+      ],
     },
     {
-      title: 'Phone',
-      texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
+      title: 'Get In Touch',
+      texts: [
+        'Phone: +91 22 1234 5678',
+        'Mobile: +91 98765 43210',
+        'Email: info@brainstation.in',
+        'Hours: Mon-Fri 9:00 AM - 6:00 PM'
+      ],
     },
     {
-      title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      title: 'Quick Links',
+      texts: [
+        'About Us',
+        'Our Programs',
+        'Student Resources',
+        'Career Opportunities',
+        'News & Updates'
+      ],
     },
   ],
   socials: [
-    { label: 'Linkedin', icon: IconBrandLinkedin, href: 'https://www.linkedin.com/company/brainstation-india-foundation/' },
-    { label: 'X', icon: IconBrandTwitter, href: 'https://x.com/BrainStation_In' },
+    { label: 'LinkedIn', icon: IconBrandLinkedin, href: 'https://www.linkedin.com/company/brainstation-india-foundation/' },
+    { label: 'X (Twitter)', icon: IconBrandTwitter, href: 'https://x.com/BrainStation_In' },
     { label: 'Instagram', icon: IconBrandInstagram, href: 'https://www.instagram.com/brainstation_in/' },
-    { label: 'Youtube', icon: IconBrandYoutube, href: 'https://www.youtube.com/@brainstationindia3192' },
-    // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/BrainStation' },
+    { label: 'YouTube', icon: IconBrandYoutube, href: 'https://www.youtube.com/@brainstationindia3192' },
   ],
   footNote: (
-    <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
-      <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
-      <span>
-        © 2025 Brainstation India Foundation. All rights reserved.
+    <div className="flex items-center text-sm">
+      <span className="mr-2 h-6 w-6 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover"></span>
+      <span className="text-white">
+        © 2025 BrainStation India Foundation. All rights reserved.
       </span>
     </div>
   ),
   disclaimerNote: (
-    <div className="w-full mx-auto max-w-screen-xl p-4" role="alert">
-      <div className="bg-gray-50 rounded-lg shadow p-4">
-        <div className="mb-2">
-          <h2 className="text-lg font-bold text-gray-900">Disclaimer</h2>
-        </div>
-        <div>
-          <p className="text-base text-gray-700 leading-relaxed">
-            BrainStation India Foundation (BSIF) makes every effort to ensure that the information
-            provided on this website is accurate and up to date. However, BSIF makes no warranties
-            or representations regarding the completeness, reliability, or accuracy of the content.
-            All services, programs, and initiatives are subject to change or withdrawal at the
-            discretion of BSIF. BrainStation India Foundation does not endorse or accept responsibility
-            for external and third-party content. Use of this website and participation in BSIF
-            programs is at your own risk.
-          </p>
-        </div>
-      </div>
+    <div className="text-sm text-slate-300 leading-relaxed">
+      BrainStation India Foundation (BSIF) makes every effort to ensure that the information
+      provided on this website is accurate and up to date. However, BSIF makes no warranties
+      or representations regarding the completeness, reliability, or accuracy of the content.
+      All services, programs, and initiatives are subject to change or withdrawal at the
+      discretion of BSIF. BrainStation India Foundation does not endorse or accept responsibility
+      for external and third-party content. Use of this website and participation in BSIF
+      programs is at your own risk.
     </div>
   ),
 };

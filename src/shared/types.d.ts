@@ -288,7 +288,7 @@ type ContentProps = Widget & {
 
 type StepsProps = Widget & {
   header?: Header;
-  items: Array<Item>;
+  items?: Array<Item>;
   /** Do you want the image to be displayed? */
   isImageDisplayed?: boolean;
   image?: Image;

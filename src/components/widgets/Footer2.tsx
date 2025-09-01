@@ -1,64 +1,105 @@
 import { footerData2 } from '~/shared/data/global.data';
 
 const Footer2 = () => {
-  const { links, columns, socials, footNote,disclaimerNote } = footerData2;
+  const { links, columns, socials, footNote, disclaimerNote } = footerData2;
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6">
-      <div className="xs:gap-8 grid grid-cols-4 gap-4 gap-y-8 py-4 md:py-6">
-        {columns.map(({ title, texts }, index) => (
-          <div
-            key={`item-column-${index}`}
-            className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1"
-          >
-            <div className="mb-2 font-medium text-gray-800 dark:text-gray-300">{title}</div>
-            {texts &&
-              texts.map((text, index2) => (
-                <p key={`item-text-${index2}`} className="text-gray-600 dark:text-slate-400">
-                  {text}
+    <footer className="bg-[#032b5b] dark:bg-[#032b5b] border-t border-[#054a8f] dark:border-[#054a8f]">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Main Footer Content */}
+        <div className="py-5 md:py-7">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+            {/* Company Info Column */}
+            <div className="lg:col-span-1">
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold text-white mb-4">
+                  BrainStation India Foundation
+                </h3>
+                <p className="text-blue-100 text-sm leading-relaxed">
+                  Empowering Dreams, Transforming Lives through innovative education and technology solutions.
                 </p>
-              ))}
-          </div>
-        ))}
-        <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
-          <div className="mb-2 font-medium text-gray-800 dark:text-gray-300">Social</div>
-          <ul className="mb-4 -ml-2 rtl:ml-0 rtl:-mr-2 flex md:order-1 md:mb-0">
-            {socials.map(({ label, icon: Icon, href }, index) => (
-              <li key={`item-social-${index}`}>
-                <a
-                  className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                  aria-label={label}
-                  href={href}
-                >
-                  {Icon && <Icon className="h-5 w-5" />}
-                </a>
-              </li>
+              </div>
+              
+              {/* Social Media */}
+              <div className="mb-6">
+                <h4 className="text-sm font-medium text-white mb-3">Follow Us</h4>
+                <div className="flex space-x-3">
+                  {socials.map(({ label, icon: Icon, href }, index) => (
+                    <a
+                      key={`item-social-${index}`}
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-[#054a8f] hover:bg-[#0a5bb8] dark:bg-[#054a8f] dark:hover:bg-[#0a5bb8] transition-colors duration-200"
+                      aria-label={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {Icon && <Icon className="h-5 w-5 text-white hover:text-blue-50" />}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Information Columns */}
+            {columns.map(({ title, texts }, index) => (
+              <div key={`item-column-${index}`} className="lg:col-span-1">
+                <h4 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">
+                  {title}
+                </h4>
+                <div className="space-y-2">
+                  {texts &&
+                    texts.map((text, index2) => (
+                      <p key={`item-text-${index2}`} className="text-sm text-blue-100 leading-relaxed">
+                        {text}
+                      </p>
+                    ))}
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
+        </div>
+
+        {/* Disclaimer Section */}
+        {disclaimerNote && (
+          <div className="border-t border-[#054a8f] dark:border-[#054a8f] py-2">
+            <div className="bg-[#054a8f] dark:bg-[#054a8f] rounded-lg p-2 md:p-3">
+              <div className="mb-3">
+                <h3 className="text-lg font-semibold text-white">Disclaimer</h3>
+              </div>
+              <div className="text-sm text-blue-100 leading-relaxed">
+                {disclaimerNote}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Bottom Footer */}
+        <div className="border-t border-[#054a8f] dark:border-[#054a8f] py-3 md:py-4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+            {/* Copyright */}
+            <div className="flex items-center">
+              {footNote}
+            </div>
+            
+            {/* Footer Links */}
+            <ul className="flex flex-wrap items-center space-x-6 text-sm">
+              {links &&
+                links.map(({ label, href }, index) => (
+                  <li key={`item-link-${index}`}>
+                    <a
+                      className="text-blue-100 hover:text-white transition-colors duration-200"
+                      aria-label={label}
+                      href={href}
+                    >
+                      {label}
+                    </a>
+                  </li>
+                ))}
+            </ul>
+          </div>
         </div>
       </div>
-  <div id="Disclaimer" className="text-muted py-6 text-base leading-relaxed text-gray-700 dark:text-slate-400 md:flex md:items-center md:justify-between md:py-8">
-     {disclaimerNote}
-      </div>
-      <div className="text-muted py-6 text-sm text-gray-700 dark:text-slate-400 md:flex md:items-center md:justify-between md:py-8">
-        <ul className="mb-4 flex pl-2 rtl:pl-0 rtl:pr-2 md:order-1 md:mb-0">
-          {links &&
-            links.map(({ label, href }, index) => (
-              <li key={`item-link-${index}`}>
-                <a
-                  className="duration-150 ease-in-out placeholder:transition hover:text-gray-700 hover:underline dark:text-gray-400"
-                  aria-label={label}
-                  href={href}
-                >
-                  {label}
-                </a>
-                {links.length - 1 !== index && <span className="mr-1 rtl:mr-0 rtl:ml-1"> · </span>}
-              </li>
-            ))}
-        </ul>
-        {footNote}
-      </div>
-    </div>
+    </footer>
   );
 };
 

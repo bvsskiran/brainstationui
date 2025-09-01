@@ -7,20 +7,23 @@ export const metadata: Metadata = {
 
 const WingsToFlyPage = () => {
   return (
-    <section className="mx-auto max-w-4xl px-4 py-4 sm:px-6 md:py-5">
+    <section className="mx-auto w-full p-1 m-2">
       <div className="text-center mb-4">
         <div className="mb-4">
           {/* Hero image placeholder, replace src with your image path */}
-          <Image
-            src={heroImg1}
-            alt="Wings to Fly Hero"
-            width={1024}
-            height={607}
-            sizes="(max-width: 64rem) 100vw, 1024px"
-            loading="eager"
-            className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
-            priority
-          />
+              <Image
+                className="w-full h-auto object-cover bg-gray-400 dark:bg-slate-700 p-0 m-0"
+                src={heroImg1}
+                alt="Wings to Fly Hero"
+                fill={false}
+                width={1920}
+                height={607}
+                sizes="100vw"
+                loading="eager"
+                placeholder="blur"
+                priority
+                quality={85}
+              />
         </div>
   <h1 className="text-3xl font-bold leading-tight mb-2">Creating Impact</h1>
       </div>

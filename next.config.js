@@ -2,6 +2,7 @@ const SITE = require('./src/config.js').SITE;
 
 /** @type {import('next').NextConfig} */
 module.exports = {
+	
 	reactStrictMode: true,
 
 	trailingSlash: SITE.trailingSlash,

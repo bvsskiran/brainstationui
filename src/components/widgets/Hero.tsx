@@ -4,22 +4,22 @@ import CTA from '../common/CTA';
 
 const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: HeroProps) => {
   return (
-    <section id="heroOne">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+    <section id="heroOne" className="w-full p-0 m-0">
+      <div className="w-full p-0 m-0">
         <div className="py-4 md:py-5">
-          <div className="mx-auto max-w-4xl pb-4 text-center md:pb-4">
+          <div className="mx-auto max-w-4xl pb-1 text-center md:pb-1">
             {tagline && (
-              <p className="text-base font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-200">
+              <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-200">
                 {tagline}
               </p>
             )}
             {title && (
-              <h1 className="leading-tighter font-heading mb-6 text-base tracking-tighter md:text-lg lg:text-xl">
+              <h1 className="text-2xl md:text-3xl font-bold mb-4">
                 {title}
               </h1>
             )}
             {/* <div className="mx-auto max-w-3xl">
-              {subtitle && <p className="mb-6 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>}
+              {subtitle && <p className="text-lg mb-4 text-gray-600 dark:text-slate-400">{subtitle}</p>}
               {/* <div className="flex max-w-none flex-col flex-nowrap gap-4 px-4 sm:flex-row sm:justify-center">
                 {callToAction && <CTA callToAction={callToAction} linkClass="btn btn-primary" />}
                 {callToAction2 && <CTA callToAction={callToAction2} linkClass="btn" />}
@@ -27,22 +27,23 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             </div> */}
           </div>
           {image && (
-            <div className="relative m-auto max-w-5xl">
+            <div className="relative w-full p-1 m-0">
               <hgroup>
                 {/* <h2>Why Choose Us</h2> */}
-                <p>Empowering Dreams, Transforming Lives</p>
+                {/* <p>Empowering Dreams, Transforming Lives</p> */}
               </hgroup>
-              
               <Image
-                className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
+                className="w-full h-auto object-cover bg-gray-400 dark:bg-slate-700 p-0 m-0"
                 src={image.src}
                 alt={image.alt}
-                width={1024}
+                fill={false}
+                width={1920}
                 height={607}
-                sizes="(max-width: 64rem) 100vw, 1024px"
+                sizes="100vw"
                 loading="eager"
                 placeholder="blur"
                 priority
+                quality={85}
               />
             </div>
           )}

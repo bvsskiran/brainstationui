@@ -57,14 +57,12 @@ const Header = () => {
 
   return (
     <header
-      className={`top-0 z-40 mx-auto w-full flex-none bg-white transition-all duration-100 ease-in dark:bg-slate-900 md:bg-white/90 md:backdrop-blur-sm dark:md:bg-slate-900/90 ${
-        isSticky ? 'sticky' : 'relative'
-      } ${isToggleMenuOpen ? 'h-screen md:h-auto' : 'h-auto'}`}
+      className="sticky top-0 z-50 w-full bg-white shadow-sm px-2 md:px-4"
       id="header"
     >
-      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-3.5 md:px-4">
+  <div className="mx-auto w-full max-w-7xl flex flex-col md:flex-row items-center justify-between px-0 py-2 md:px-0 gap-2 md:gap-0">
         <div
-          className={`flex justify-between py-3 px-3 md:py-0 md:px-0 ${
+          className={`flex justify-between items-center w-full py-2 px-0 md:py-0 md:px-0 ${
             isToggleMenuOpen
               ? 'md:bg-transparent md:dark:bg-transparent md:border-none bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-600'
               : ''
@@ -77,33 +75,37 @@ const Header = () => {
               isToggleMenuOpen ? handleToggleMenuOnClick() : setIsDropdownOpen(updatedIsDropdownOpen as boolean[])
             }
           >
-            <Logo />
+            <span className="h-9 w-auto flex items-center">
+              <Logo />
+            </span>
           </Link>
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center md:hidden ml-2">
             <ToggleMenu handleToggleMenuOnClick={handleToggleMenuOnClick} isToggleMenuOpen={isToggleMenuOpen} />
           </div>
         </div>
         <nav
-          className={`${isToggleMenuOpen ? 'block px-3' : 'hidden'} h-screen md:w-full ${
+          className={`${isToggleMenuOpen ? 'block px-2' : 'hidden'} fixed top-0 left-0 w-full h-screen bg-white dark:bg-slate-900 md:static md:w-auto md:h-auto md:bg-transparent md:dark:bg-transparent ${
             position === 'right' ? 'justify-end' : position === 'left' ? 'justify-start' : 'justify-center'
-          } w-auto overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:items-center md:overflow-visible`}
+          } overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:items-center md:overflow-visible`}
           aria-label="Main navigation"
         >
           <ul
             ref={ref}
-            className="flex w-full flex-col mt-2 mb-36 md:m-0 text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base"
+            className="flex w-full flex-col mt-2 mb-36 md:m-0 text-sm md:w-auto md:flex-row md:self-center md:pt-0 md:text-xs md:flex-nowrap md:whitespace-nowrap"
           >
             {links &&
               links.map(({ label, href, icon: Icon, links }, index) => (
-                <li key={`item-link-${index}`} className={links?.length ? 'dropdown' : ''}>
+                <li key={`item-link-${index}`} className={links?.length ? 'dropdown md:whitespace-nowrap' : 'md:whitespace-nowrap'}>
                   {links && links.length ? (
                     <>
-                      <button className="flex items-center px-4 py-3 font-medium transition-colors duration-200 hover:text-primary-600 dark:hover:text-primary-400"
-                        onClick={() => handleDropdownOnClick(index)}>
+                      <button
+                        className="flex items-center px-4 py-2 font-medium uppercase tracking-wide text-gray-800 hover:text-blue-600 transition-colors duration-200 dark:text-gray-100 dark:hover:text-primary-400 text-xs"
+                        onClick={() => handleDropdownOnClick(index)}
+                      >
                         {label}{' '}
                         {Icon && (
                           <Icon
-                            className={`${
+                            className={`$${
                               isDropdownOpen[index] ? 'rotate-180' : ''
                             } ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden h-3.5 w-3.5 md:inline`}
                           />
@@ -117,7 +119,7 @@ const Header = () => {
                         {links.map(({ label: label2, href: href2 }, index2) => (
                           <li key={`item-link-${index2}`}>
                             <Link
-                              className="whitespace-no-wrap block py-2 px-5 first:rounded-t last:rounded-b transition-colors duration-200 hover:text-primary-600 dark:hover:text-primary-400 dark:hover:bg-gray-700 md:hover:bg-gray-200"
+                                className="whitespace-no-wrap block py-2 px-5 first:rounded-t last:rounded-b transition-colors duration-200 text-gray-600 hover:text-blue-700 bg-white dark:bg-white text-xs"
                               href={href2 as string}
                               onClick={() =>
                                 isToggleMenuOpen ? handleToggleMenuOnClick() : handleCloseDropdownOnClick(index)
@@ -131,7 +133,7 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      className="flex items-center px-4 py-3 font-medium transition-colors duration-200 hover:text-primary-600 dark:hover:text-primary-400"
+                      className="flex items-center px-4 py-2 font-medium uppercase tracking-wide text-gray-800 hover:text-blue-600 transition-colors duration-200 dark:text-gray-100 dark:hover:text-primary-400 text-xs"
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >
@@ -143,11 +145,11 @@ const Header = () => {
           </ul>
         </nav>
         <div
-          className={`${
+          className={`$
             isToggleMenuOpen ? 'block' : 'hidden'
           } fixed bottom-0 left-0 w-full justify-end p-3 md:static md:mb-0 md:flex md:w-auto md:self-center md:p-0 md:bg-transparent md:dark:bg-transparent md:border-none bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-600`}
         >
-          <div className="flex w-full items-center justify-between md:w-auto">
+          <div className="flex w-full md:w-auto items-center justify-end gap-2 md:gap-4">
             {showToggleTheme && <ToggleDarkMode />}
             {showRssFeed && (
               <Link
@@ -164,7 +166,7 @@ const Header = () => {
                   <CTA
                     key={`item-action-${index}`}
                     callToAction={callToAction as CallToActionType}
-                    linkClass="btn btn-primary m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
+                    linkClass="bg-blue-600 hover:bg-blue-700 text-white rounded-md m-1 py-2 px-4 text-xs font-semibold shadow transition-colors duration-200 md:px-5"
                   />
                 ))}
               </div>

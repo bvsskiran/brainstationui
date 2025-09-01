@@ -50,6 +50,7 @@ export const heroHome: HeroProps = {
       BrainStation India Foundation (BSIF) is a non-profit organization dedicated to empowering underprivileged children and youth through education, skill development, and community support. We believe in creating opportunities for a brighter future.
     </>
   ),
+  tagline: 'Inspiring Dreams, Building Futures. Creating Impact.',
   subtitle: (
     <>
       <span className="hidden md:inline">

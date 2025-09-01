@@ -90,7 +90,7 @@ export const statsAbout: StatsProps = {
 // FeaturesFour data on About page *******************
 export const featuresFourAbout: FeaturesProps = {
   id: 'features-four-on-about',
-  hasBackground: false,
+  hasBackground: true,
   header: {
     title: 'Mission',
     subtitle:
@@ -159,15 +159,16 @@ export const featuresFourAboutTwo: FeaturesProps = {
 // Steps data on About page *******************
 export const stepsAbout: StepsProps = {
   id: 'steps-on-about',
-  hasBackground: true,
-  isImageDisplayed: false,
+  hasBackground: false,
+  isImageDisplayed: true,
+  isReversed: true,
   header: {
     title: 'Our Story',
     subtitle:
       'At the heart of it, the story of BrainStation India is about friendship and trust. Four friends who studied together and stayed connected for nearly two decades came together with a shared purpose: to give back the opportunities and guidance they never had.BrainStation India Foundation is an organisation built on mutual respect, commitment, and the belief that human values form the strongest foundation for innovation and upliftment.Our journey began with a major milestone: establishing an Incubation Centre at Bhilai Institute of Technology, Durg, Chhattisgarh — the very institute where our founders studied. This collaboration not only created a launchpad for aspiring entrepreneurs but also set the course for an exciting, impact-driven future. Now, we have expanded our reach pan India, and are supporting students from economically weaker sections to get their dream education.',
     tagline: '',
   },
-  items:[{}],
+  
   //items: [
     // {
     //   title: 'Our foundation',
@@ -202,6 +203,32 @@ export const stepsAbout: StepsProps = {
   //],
 };
 
+// Steps data on About page Vision*******************
+export const stepsVision: StepsProps = {
+  id: 'steps-on-vision',
+  hasBackground: false,
+  isImageDisplayed: true,
+ isReversed: true,
+  header: {
+    title: 'Vision',
+    subtitle:
+      'To be the destination of choice for people eager to solve real-life problems for entrepreneurial progress and social uplifting.',
+    tagline: '',
+  },
+  };
+
+  // Steps data on About page Mission*******************
+export const stepsMission: StepsProps = {
+  id: 'steps-on-mission',
+  hasBackground: true,
+  isImageDisplayed: true,
+  header: {
+    title: 'Mission',
+    subtitle:
+      'To support 100 entrepreneurs in three years  building a sustainable ecosystem of innovation and entrepreneurship.',
+   tagline: '',
+  },
+  };
 // Features3 data on About page *******************
 export const features3About: FeaturesProps = {
   id: 'featuresThree-on-about',
@@ -283,7 +310,7 @@ export const featuresAbout: FeaturesProps = {
 // Team data on About page *******************
 export const teamAbout: TeamProps = {
   id: 'team-on-about',
-  hasBackground: false,
+  hasBackground: true,
   header: {
     title: 'Our Team',
     subtitle:

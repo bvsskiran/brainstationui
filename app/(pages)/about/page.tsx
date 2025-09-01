@@ -8,7 +8,7 @@ import Features4 from '~/components/widgets/Features4';
 import Hero2 from '~/components/widgets/Hero2';
 import Stats from '~/components/widgets/Stats';
 import Steps from '~/components/widgets/Steps';
-import Team2 from '~/components/widgets/Team2';
+import Team3 from '~/components/widgets/Team3';
 import Testimonials2 from '~/components/widgets/Testimonials2';
 import {
   contactAbout,
@@ -20,6 +20,8 @@ import {
   hero2About,
   statsAbout,
   stepsAbout,
+  stepsVision,
+  stepsMission,
   testimonials2About,
   featuresAbout,
   teamAbout,
@@ -35,16 +37,18 @@ const Page = () => {
       <Hero2 {...hero2About} />
       {/* <Stats {...statsAbout} /> */}
       <Steps {...stepsAbout} />
-      <Features4 {...featuresFourAbout} />
-      <Features4 {...featuresVisionAbout} />
+      <Steps {...stepsMission} />
+      <Steps {...stepsVision} />
+      {/* <Features4 {...featuresFourAbout} />
+      <Features4 {...featuresVisionAbout} /> */}
       {/* <Features4 {...featuresFourAboutTwo} /> */}
       
       {/* <Features3 {...features3About} /> */}
       {/* <Features {...featuresAbout} /> */}
-      <Team2 {...teamAbout} />
+      <Team3 {...teamAbout} />
       {/* <Testimonials2 {...testimonials2About} /> */}
-      <FAQs {...faqsAbout} />
-      <Contact {...contactAbout} />
+      {/* <FAQs {...faqsAbout} />
+      <Contact {...contactAbout} /> */}
     </>
   );
 };

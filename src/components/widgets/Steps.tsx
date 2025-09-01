@@ -21,7 +21,7 @@ const Steps = ({
       }`}
     >
       <div
-        className={`md:py-4 ${
+        className={`md:py-4 ${  
           isImageDisplayed ? 'md:pr-16 md:rtl:pr-0 md:rtl:pl-16 md:basis-1/2' : 'max-w-4xl mx-auto md:self-center'
         }`}
       >
