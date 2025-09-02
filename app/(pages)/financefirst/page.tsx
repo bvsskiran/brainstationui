@@ -53,7 +53,7 @@ const FinanceFirstPage = () => {
         <h2>Get Involved</h2>
         <p>
           Join us in spreading financial literacy. You can participate as a learner, volunteer as a mentor, or partner with us to bring programs to new communities. Together, we can create a financially confident generation equipped to thrive in the modern world.<br />
-          Contact us: (email/form)
+          Contact us: (connect@brainstationindia.com)
         </p>
       </div>
     </section>

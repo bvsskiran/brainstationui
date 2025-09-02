@@ -50,7 +50,7 @@ const PowerToDreamPage = () => {
         <p>
           Through Power to Dream, we are building a network of individuals and organisations who share the vision of education as a right, not a privilege. If you want to contribute, volunteer, or help in any other way, just get in touch with us.<br />
           Your involvement can change the course of a girl’s life—and countless others.<br />
-          (email/form)
+          (connect@brainstationindia.com/form)
         </p>
       </div>
     </section>

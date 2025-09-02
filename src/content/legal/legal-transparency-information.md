@@ -31,4 +31,4 @@ At BrainStation India Foundation (BSIF), we are committed to operating with the 
 
 For further information please contact us.
 
-- By email: [info@brainstation.in](mailto:info@brainstation.in)
+- By email: [connect@brainstationindia.com](mailto:connect@brainstationindia.com)

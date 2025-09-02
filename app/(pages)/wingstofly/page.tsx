@@ -53,7 +53,7 @@ const WingsToFlyPage = () => {
         <h2>Get Involved</h2>
         <p>
           Wings to Fly is open to everyone: students with an idea, mentors with expertise, investors looking for impact-driven startups, or organisations wanting to collaborate. Together, we can create the next generation of entrepreneurs who will drive change for years to come.<br />
-          If you are interested, contact us via (form or email id here)
+          If you are interested, contact us via (form or connect@brainstationindia.com)
         </p>
       </div>
     </section>

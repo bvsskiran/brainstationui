@@ -80,7 +80,7 @@ const CookiePolicyPage = () => {
         Postal: Brainstation India Foundation, 303 Gokul Arcade, A Wing, Sahar Road, Vile Parle East, Mumbai – 400057, Maharashtra, India.<br /><br />
         For general queries contact us
 
-        - By email: <a href="mailto:info@brainstation.in">info@brainstation.in</a>
+        - By email: <a href="mailto:connect@brainstationindia.com">connect@brainstationindia.com</a>
         </p>
       </div>
     </section>

@@ -275,7 +275,7 @@ export const footerData2: FooterProps = {
       texts: [
         'Phone: +91 22 1234 5678',
         'Mobile: +91 98765 43210',
-        'Email: info@brainstation.in',
+        'Email: connect@brainstationindia.com',
         'Hours: Mon-Fri 9:00 AM - 6:00 PM'
       ],
     },
