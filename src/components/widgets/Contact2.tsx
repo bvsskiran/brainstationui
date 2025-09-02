@@ -1,7 +1,9 @@
+
 import Form from '../common/Form';
 import Headline from '../common/Headline';
 import { ContactProps } from '~/shared/types';
 import WidgetWrapper from '../common/WidgetWrapper';
+import Link from 'next/link';
 
 
 const Contact2 = ({ header, form, id, hasBackground = false, items = [] }: ContactProps) => (
@@ -31,7 +33,8 @@ const Contact2 = ({ header, form, id, hasBackground = false, items = [] }: Conta
         <div className="bg-white rounded-xl shadow-lg p-4 md:p-8 max-w-xl w-full mx-auto">
           <Form {...form} containerClass="space-y-3 text-sm" btnPosition="right" />
           <div className="mt-4 text-center text-[11px] text-gray-500">
-            By completing this form you agree to our <a href="/privacy" className="text-[#0ca5ff] underline hover:text-[#0284c7]">Privacy Policy</a>.
+            By completing this form you agree to our{' '}
+            <Link href="/privacy" className="text-[#0ca5ff] underline hover:text-[#0284c7]">Privacy Policy</Link>.
           </div>
         </div>
       </div>
