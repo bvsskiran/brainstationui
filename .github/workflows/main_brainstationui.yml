@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Next.js app to Azure Web App - brainstationui
+name: Build and deploy Node.js app to Azure Web App - brainstationui
 
 on:
   push:
@@ -22,12 +22,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
-      
-      - name: Install Dependencies
-        run: npm install
 
-      - name: Build Next.js App
-        run: npm run build
+      - name: npm install, build, and test
+        run: |
+          npm install
+          npm run build --if-present
+          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -47,16 +47,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-
-      - name: Wait before deployment
-        run: sleep 60
-  
+      
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_AB7499AA4CCE4EE28BB3BD1E6C694A5E }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B967073E9E2C42D0A38E5321AEA89C42 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7BCF1002F7CD4A009B1DC850B9789B6F }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_DCD8F04164C4482CB278572170148DFE }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_416B8A98ACB148D1BD9BC2FD313840CF }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D65D76E8F7DC4F6C88704BE9E0311FC3 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -65,6 +62,4 @@ jobs:
           app-name: 'brainstationui'
           slot-name: 'Production'
           package: .
-
           
-
