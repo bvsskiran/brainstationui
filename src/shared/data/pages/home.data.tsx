@@ -115,7 +115,7 @@ export const featuresHome: FeaturesProps = {
     title: (
       <>
         {/* What you get with <span className="whitespace-nowrap">BrainStation</span> */}
-        Program Overview 
+        {/* Program Overview  */}
       </>
     ),
     subtitle:"",

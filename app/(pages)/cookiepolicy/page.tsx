@@ -4,9 +4,11 @@ export const metadata = {
 
 const CookiePolicyPage = () => {
   return (
-    <section className="mx-auto max-w-4xl px-4 py-12">
-  <h1 className="text-3xl font-bold leading-tight mb-6">Cookie Policy</h1>
-  <div className="prose max-w-none text-base leading-relaxed dark:prose-invert mx-auto">
+    <section className="mx-auto max-w-4xl px-4 py-12 prose-h1:text-[24px]">
+  <h1 className="text-3xl font-bold leading-tight mb-6 ml-20">Cookie Policy</h1>
+  {/* <div className="prose max-w-none text-base leading-relaxed dark:prose-invert mx-auto"> */}
+    <div className="prose container mx-auto mt-8 max-w-3xl px-6 sm:px-6 lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:font-bold prose-headings:tracking-tighter prose-a:text-primary-600 prose-img:rounded-md prose-img:shadow-lg dark:prose-invert dark:prose-headings:text-slate-300 dark:prose-a:text-primary-400 prose-p:text-[18px] prose-li:text-[18px] prose-h1:text-[24px] prose-h2:text-[20px] prose-h3:text-[20px] prose-h1:mb-4 prose-h2:mb-3 prose-p:first:text-[18px] prose-table:text-[16px]">
+      
         <p><b>BrainStation India Foundation (BSIF)</b><br />
         <b>Effective Date:</b> 23 August 2025</p>
         <p>This Cookie Policy explains how BrainStation India Foundation (BSIF) uses cookies and similar technologies on our website. It should be read together with our [Privacy Policy].<br />
@@ -76,7 +78,9 @@ const CookiePolicyPage = () => {
         Email:<br />
         Phone:<br />
         Postal: Brainstation India Foundation, 303 Gokul Arcade, A Wing, Sahar Road, Vile Parle East, Mumbai – 400057, Maharashtra, India.<br /><br />
-        For general queries contact us (link)
+        For general queries contact us
+
+        - By email: <a href="mailto:info@brainstation.in">info@brainstation.in</a>
         </p>
       </div>
     </section>

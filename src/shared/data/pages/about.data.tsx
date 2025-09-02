@@ -419,11 +419,11 @@ export const teamAbout: TeamProps = {
       ],
     },
     {
-      name: 'Vikalph',
+      name: 'Vikalp',
       occupation: '',
       image: {
         src: vikalpImg,
-        alt: 'Vikalph',
+        alt: 'Vikalp',
       },
       items: [
         {

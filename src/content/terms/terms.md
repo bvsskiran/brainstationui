@@ -107,4 +107,4 @@ For general queries, contact us
 
 If you have any questions about these Terms and Conditions, You can contact us:
 
-- By email: [somecoolemail@domain.com](mailto:somecoolemail@domain.com)
+- By email: [info@brainstation.in](mailto:info@brainstation.in)

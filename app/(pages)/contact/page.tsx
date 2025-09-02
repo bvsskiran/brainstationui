@@ -12,9 +12,11 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <Hero {...heroContact} />
+      {/* <Hero {...heroContact} /> */}
       <Contact2 {...contact2Contact} />
-      <Features2 {...features2Contact} />
+      <div className="text-xs md:text-sm">
+        <Features2 {...features2Contact} />
+      </div>
     </>
   );
 };

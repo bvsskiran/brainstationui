@@ -22,8 +22,8 @@ export const contact2Contact: ContactProps = {
     title: 'Contact us',
     subtitle: (
       <>
-        Please take a moment to fill out this form.{' '}
-        <span className="hidden md:inline">{`So we can better understand your needs and get the process started smoothly.`}</span>
+        We are here for you! How can we help?
+        {/* <span className="hidden md:inline">{`So we can better understand your needs and get the process started smoothly.`}</span> */}
       </>
     ),
   },
@@ -45,7 +45,7 @@ export const contact2Contact: ContactProps = {
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
+    title: 'Lets Get in Touch!',
     inputs: [
       {
         type: 'text',
@@ -133,7 +133,7 @@ export const features2Contact: FeaturesProps = {
       icon: IconMessages,
       callToAction: {
         text: 'Write to us',
-        href: '/',
+        href: '/contact',
       },
     },
     {

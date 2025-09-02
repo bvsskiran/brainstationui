@@ -7,7 +7,7 @@ const WidgetWrapper = ({ children, id, hasBackground, containerClass }: WrapperT
     <Background hasBackground={hasBackground} />
     <div
       className={twMerge(
-        'relative mx-auto max-w-7xl px-4 md:px-6 py-4 md:py-4 lg:py-6 text-default',
+        'relative mx-auto max-w-7xl px-4 md:px-3 py-2 md:py-4 lg:py-4 text-default',
         containerClass,
       )}
     >

@@ -1,4 +1,4 @@
-## Privacy Policy
+# Privacy Policy
 
 _Last updated_: August 23, 2025
 
@@ -131,4 +131,4 @@ For general queries contact us (link)
 
 If you have any questions about this Privacy Policy, You can contact us:
 
-- By email: [somecoolemail@domain.com](mailto:somecoolemail@domain.com)
+- By email: [info@brainstation.in](mailto:info@brainstation.in)

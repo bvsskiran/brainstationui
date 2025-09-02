@@ -166,7 +166,7 @@ const Header = () => {
                   <CTA
                     key={`item-action-${index}`}
                     callToAction={callToAction as CallToActionType}
-                    linkClass="bg-blue-600 hover:bg-blue-700 text-white rounded-md m-1 py-2 px-4 text-xs font-semibold shadow transition-colors duration-200 md:px-5"
+                    linkClass="bg-blue-600 hover:bg-blue-700 text-white rounded-md m-1 py-2 px-4 text-xs font-semibold shadow transition-colors duration-200 md:px-5 bg-[#0ca5ff] hover:bg-[#0b94e0] dark:bg-blue-400 dark:hover:bg-blue-500"
                   />
                 ))}
               </div>

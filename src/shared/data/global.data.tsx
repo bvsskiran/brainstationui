@@ -229,11 +229,38 @@ export const footerData2: FooterProps = {
       href: '/cookiepolicy',
     },
     {
+      label: 'Legal & Transparency Information',
+      href: '/legal-transparency-information',
+    },
+    {
       label: 'Disclaimer',
       href: '#Disclaimer',
     },
   ],
   columns: [
+    {
+      title: 'Quick Links',
+      links: [
+        {
+          label: 'About Us',
+          href: '/about',
+        },
+        {
+          label: 'Our Programs',
+          href: '/',
+        },
+        {
+          label: 'News & Updates',
+          href: '/',
+        },
+      ],
+      texts: [
+        'About Us',
+        'Our Programs',
+        'News & Updates'
+      ],
+      
+    },
     {
       title: 'Contact Us',
       texts: [
@@ -252,20 +279,10 @@ export const footerData2: FooterProps = {
         'Hours: Mon-Fri 9:00 AM - 6:00 PM'
       ],
     },
-    {
-      title: 'Quick Links',
-      texts: [
-        'About Us',
-        'Our Programs',
-        'Student Resources',
-        'Career Opportunities',
-        'News & Updates'
-      ],
-    },
   ],
   socials: [
     { label: 'LinkedIn', icon: IconBrandLinkedin, href: 'https://www.linkedin.com/company/brainstation-india-foundation/' },
-    { label: 'X (Twitter)', icon: IconBrandTwitter, href: 'https://x.com/BrainStation_In' },
+    { label: 'X (twitter)', icon: IconBrandTwitter, href: 'https://x.com/BrainStation_In' },
     { label: 'Instagram', icon: IconBrandInstagram, href: 'https://www.instagram.com/brainstation_in/' },
     { label: 'YouTube', icon: IconBrandYoutube, href: 'https://www.youtube.com/@brainstationindia3192' },
   ],
@@ -278,7 +295,7 @@ export const footerData2: FooterProps = {
     </div>
   ),
   disclaimerNote: (
-    <div className="text-sm text-slate-300 leading-relaxed">
+    <div className="leading-relaxed">
       BrainStation India Foundation (BSIF) makes every effort to ensure that the information
       provided on this website is accurate and up to date. However, BSIF makes no warranties
       or representations regarding the completeness, reliability, or accuracy of the content.

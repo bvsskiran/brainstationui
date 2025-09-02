@@ -40,8 +40,8 @@ export default async function Page() {
   return (
     <>
       <Hero {...heroHome} />
-      {/* <Features {...featuresHome} /> */}
-    <LatestBlogsCarousel posts={posts} headingClass="text-blue-600" />
+      <Features {...featuresHome} />
+      {/* <LatestBlogsCarousel posts={posts} headingClass="text-blue-600" /> */}
       {/* <FAQs2 {...faqs2Home} />
       <Team {...teamHome} /> */}
       {/* <Contact {...contactHome} /> */}
