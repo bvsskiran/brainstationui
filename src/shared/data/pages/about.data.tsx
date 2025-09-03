@@ -571,7 +571,7 @@ export const contactAbout: ContactProps = {
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: BrainStation@gmail.com'],
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: connect@brainstationindia.com'],
       icon: IconPhoneCall,
     },
     {

@@ -72,7 +72,7 @@ const Form = ({
                   value={inputValues[index]}
                   onChange={changeInputValueHandler}
                   placeholder={placeholder}
-                  className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                  className="mb-2 w-full rounded-md border border-gray-300 py-2 pl-2 pr-3 shadow-md dark:text-gray-300 sm:mb-0"
                 />
               </div>
             ))}
