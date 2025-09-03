@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(pages)/latest/page": "app/(pages)/latest/page.js",
+  "/(legal)/terms/page": "app/(legal)/terms/page.js",
+  "/(legal)/legal-transparency-information/page": "app/(legal)/legal-transparency-information/page.js",
+  "/(legal)/privacy/page": "app/(legal)/privacy/page.js",
+  "/(blog)/blog/page": "app/(blog)/blog/page.js",
+  "/(pages)/about/page": "app/(pages)/about/page.js",
+  "/(blog)/[slug]/page": "app/(blog)/[slug]/page.js",
+  "/(pages)/contact/page": "app/(pages)/contact/page.js",
+  "/(pages)/faqs/page": "app/(pages)/faqs/page.js",
+  "/(pages)/cookiepolicy/page": "app/(pages)/cookiepolicy/page.js",
+  "/(pages)/financefirst/page": "app/(pages)/financefirst/page.js",
+  "/(pages)/getinvolved/page": "app/(pages)/getinvolved/page.js",
+  "/(pages)/wingstofly/page": "app/(pages)/wingstofly/page.js",
+  "/(pages)/pricing/page": "app/(pages)/pricing/page.js",
+  "/page": "app/page.js",
+  "/(pages)/services/page": "app/(pages)/services/page.js",
+  "/(pages)/powertodream/page": "app/(pages)/powertodream/page.js"
+}

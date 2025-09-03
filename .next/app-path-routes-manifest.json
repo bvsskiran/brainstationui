@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/(pages)/latest/page": "/latest",
+  "/(legal)/terms/page": "/terms",
+  "/(legal)/legal-transparency-information/page": "/legal-transparency-information",
+  "/(legal)/privacy/page": "/privacy",
+  "/(blog)/blog/page": "/blog",
+  "/(pages)/about/page": "/about",
+  "/(blog)/[slug]/page": "/[slug]",
+  "/(pages)/contact/page": "/contact",
+  "/(pages)/faqs/page": "/faqs",
+  "/(pages)/cookiepolicy/page": "/cookiepolicy",
+  "/(pages)/financefirst/page": "/financefirst",
+  "/(pages)/getinvolved/page": "/getinvolved",
+  "/(pages)/wingstofly/page": "/wingstofly",
+  "/(pages)/pricing/page": "/pricing",
+  "/page": "/",
+  "/(pages)/services/page": "/services",
+  "/(pages)/powertodream/page": "/powertodream"
+}
